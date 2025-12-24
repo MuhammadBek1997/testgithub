@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.labirint-head{
+    text-align: center;
+}
+.playground{
+    width: 650px;
+    height: 650px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+}
+.start,
+.finish{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.start{
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: red;
+}
+.finish{
+    bottom: 0;
+    right: 0;
+    background-color: green;
+    color: white;
+}
+.lose{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(255, 0, 0, 0.328);
+    color: red;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.win{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(0, 255, 0, 0.327);
+    color: yellow;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.finish:hover ~ .win{
+    display: flex;
+}
+.wall{
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: red;
+}
+.lose:hover{
+    display: flex;
+}
+.wall:hover ~ .lose{
+    display: flex;
+}
+#one{
+    left: 51px;
+    top: 41px;
+}
+#two{
+    left: 101px;
+    top: 41px;
+}
+#three{
+    left: 151px;
+    top: 20px;
+    transform: rotateZ(90deg);
+}
+#four{
+    left: 151px;
+    top: 70px;
+    transform: rotateZ(90deg);
+}
+#five{
+    left: 122px;
+    top: 70px;
+    transform: rotateZ(90deg);
+}
+#six{
+    left: 140px;
+    top: 110px;
+}
